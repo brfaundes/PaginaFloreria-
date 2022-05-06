@@ -1,0 +1,70 @@
+#img{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+}
+
+p{
+    text-align: center;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 50%;
+
+}
+
+#promo{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.37);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+#p2{
+  text-align: center;
+  margin: auto;
+  
+}
+
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 30px;
+}
+
+h3{
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  font-size: 60px;
+
+}
+h4{
+  text-align: center;
+  font-size: 15px;
+}
+
+h5{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.541);
+  margin: auto;
+
+}
+#contacto{
+  text-align: center;
+  margin-top: 10%;
+  font-style: normal;
+}
+
+.col{
+  text-align: center;
+  margin: auto;
+}
+
+li{
+  text-align: left;
+}
+
+
+
