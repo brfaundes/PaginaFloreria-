@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-CL">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,12 +7,13 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="css.css" rel="stylesheet" >
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="css.css">
+
     <title>Jardineria</title>
   </head>
   <body style="background-color:rgb(216, 216, 216) ;">
@@ -39,7 +40,6 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="Index.html" style="color: aliceblue;">Inicio</a>
               </li>
-              
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
                   Categorias
@@ -51,6 +51,11 @@
                   
                 </ul>
               </li>
+
+              
+
+                
+  
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Action</a></li>
                   <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -61,10 +66,9 @@
   
             </ul>
 
-          <a href="registro.html" button type="button" class="btn btn-success" > Registro </a>
-          <h9 style="color: rgb(54, 54, 54);">_____</h9>
-          
-          </ul>
+            <a href="registro.html" button type="button" class="btn btn-success" > Registro </a>
+            <h9 style="color: rgb(54, 54, 54);">_____</h9>
+
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
               <button class="btn btn-outline-light" type="submit">Buscar</button>
@@ -74,104 +78,84 @@
 
   
         </div>
-      </nav>   
-<!-- FINAL NAVBAR -->
-    <br>
-<!-- Imagen y texto -->
-    <div class="container" style="background-color:rgb(216, 216, 216) ;">
-      <div class="row">
-          <div class="col"  >
-              <br>
-              <div id="img" class="container-fluid"><img src="img/imgIndex.jpg" alt="imagen de index" width=200 height="200"></div>
-              <br>
-          </div>
-          <div class="col"  >
-            <p>
-              Como vecinos queremos que la comunidad se llene de colores!!!, es por eso que vendemos productos para jardinería: flores, arbustos, tierra de hojas, maceteros. Las ganancias seran donadas a una fundación sin fines de lucro.
-            </p>
-          </div>
-      </div>
-      <hr width="100%" color="black" />
-      <h1> Contacto</h1>
-      <h2>+56961686938</h2>
-      <hr width="100%" color="black" />
-    </div>
-<!-- Fin Imagen y texto -->
+      </nav>
+ <!-- FINAL NAVBAR -->
 
-<!-- Inicio Carrusel-->
 
-    <div class="container-fluid" style="background-color:rgb(216, 216, 216) ;">
-      <div class="row">
-      <div class="col"></div>
-      
-      <div class="col">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="macetero.html"><img src="img/macetero3.jpg" class="d-block w-100" alt="..." width="400" height="500"></a>
-            <div class="carousel-caption d-none d-md-block" >
-              <h5>PROMOCION MACETEROS</h5>
-              <p id="promo">MAcetero 3 X SOLO $60.000 </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="tierra.html"><img src="img/tierra3.jpg" class="d-block w-100" alt="..." width="400" height="500" ></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>PROMOCION TIERA DE HOJAS</h5>
-              <p id="promo">3 x2 Tierra de hojas reforzada</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="flores.html"><img src="img/flores2.jpg" class="d-block w-100" alt="..." width="400" height="500"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 >PROMOCION FLORES</h5>
-              <p id="promo">Violetas 4 X $20.000</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </div>
-      <div class="col"></div>
-    </div>
-    </div>
-<!-- Fin Carrusel -->
-    <br>
-<div class="container" style="background-color:rgb(216, 216, 216) ;">
-  <hr width="100%" color="black" />
-    <div class="row">
 
-      <div class="col">
-        <h3>Macetero</h3>
-        <p id="p2">Lindos maceteros de ceramica ideales para su hogar, ya sea interior o exterior. </p>
-      </div>
-      <div class="col">
-        <h3>Flores</h3>
-        <p id="p2">Llenese de colores con la gran variedad de violetas, rosas y girasoles.</p>
-      </div>
 
-      <div class="col">
-        <h3>Fertilizantes</h3>
-        <p id="p2">Fertilizantes y tierra de hojas de Gran calidad para tus plantas y flores.</p>
-      </div>
+<div class="container">
 
-   </div>
-   <hr width="100%" color="black" />
-
-</div>
 <br>
+<hr width="100%" color="black" />
+  <h3> Tierra de Hojas</h3>
+  <hr width="100%" color="black" />
+<br>
+<br>
+
+  <div class="row"> 
+      <table class="col"> 
+          <tr>
+              <td>
+                  <img src="imG/tierra.jpg ." alt="rosas" width= 200 height=200>
+              </td>
+              <td>
+                  <ul>
+                      <li>Descripcion: Tierra de hojas BIOCURAUMA 20 kg </li>
+                      <li>Precio: $20.000</li>
+                      <li>codigo de inventario: 98497853</li>
+                      <li>En stock: 6</li>
+
+                      <br>
+                      <button type="button" class="btn btn-success">Comprar</button>
+                  </ul>
+              </td>
+          </tr>
+      </table>
+
+      <table class="col"> 
+        <tr>
+            <td>
+                <img src="imG/tierra2.jpg ." alt="violetas" width= 200 height=200>
+            </td>
+            <td>
+                <ul>
+                    <li>Descripcion: ANASAC TIERRA BIOLOGICA COMPOST </li>
+                    <li>Precio: $25.000</li>
+                    <li>codigo de inventario: 9456853</li>
+                    <li>En stock: 7</li>
+
+                    <br>
+                    <button type="button" class="btn btn-success">Comprar</button>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+    <table class="col"> 
+      <tr>
+          <td>
+              <img src="imG/tierra3.jpg ." alt="girasoles" width= 200 height=200>
+          </td>
+          <td>
+              <ul>
+                  <li>Descripcion: GASPAR Tierra de hojas </li>
+                  <li>Precio: $18.990</li>
+                  <li>codigo de inventario: 9412453</li>
+                  <li>En stock: 5</li>
+
+                  <br>
+                  <button type="button" class="btn btn-success">Comprar</button>
+              </ul>
+          </td>
+      </tr>
+  </table>
+
+  </div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 <div class="container-fluid" style="background-color: rgb(54, 54, 54);">
   <br>
@@ -195,5 +179,6 @@
   <br>
 
 </div>
-  </body>
+
+</body>
 </html>
