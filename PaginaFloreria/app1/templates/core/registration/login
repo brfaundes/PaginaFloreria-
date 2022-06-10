@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es-CL">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/css.css'%}" rel="stylesheet" >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <title>Jardineria</title>
+  </head>
+  <body style="background-color:rgb(216, 216, 216) ;">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(54, 54, 54);">
+        <!-- LOGO -->
+        <div class="container-fluid">
+          <nav class="navbar navbar-light" style="background-color: rgb(54, 54, 54);">
+            
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="index.html">
+                <img src="{% static 'img/logo.png '%}" alt="" width="60" height="48" class="d-inline-block align-text-top">
+              </a>
+            </div>
+          </nav>
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" style="color: rgb(255, 255, 255);"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: rgb(255, 255, 255);"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html" style="color: aliceblue;">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tienda.html" style="color: aliceblue;">Tienda</a>
+              </li>
+              
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: aliceblue;">
+                  Por categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="macetero.html" >Maceteros</a></li>
+                  <li><a class="dropdown-item" href="tierra.html">Tierras de hoja</a></li>
+                  <li><a class="dropdown-item" href="flores.html">Flores y arbustos</a></li>
+                  
+                </ul>
+              </li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+  
+            </ul>
+
+          <a href="registro.html" button type="button" class="btn btn-success" > Registro </a>
+          <h9 style="color: rgb(54, 54, 54);">_____</h9>
+          
+          </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+
+  
+        </div>
+      </nav>   
+<!-- FINAL NAVBAR -->
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <table>{{ form.as_table }}</table>
+    
+    <input type="submit" value="login">
+</form>
+
+<div class="container-fluid" style="background-color: rgb(54, 54, 54);">
+  <br>
+  <div class="row">
+    <div class="col" style="color: rgb(216, 216, 216);">
+      <h4>- CONTACTO -</h4>
+      <h4>+56961686938</h4>
+      <h4>floreria@gmail.com</h4>  
+    </div>
+
+    <div class="col">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2365.1926145806688!2d-71.53237748665616!3d-33.0330949488685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1649280916923!5m2!1ses!2scl" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="col" style="color: rgb(216, 216, 216);">
+      <h4>- HORARIO DE ATENCION -</h4>
+      <h4>Lunes a viernes : 08:00-20:00</h4>
+      <h4>Sabado y domingo: 08:00-16:00</h4>
+    </div>
+  </div>
+  <br>
+
+</div>
+  </body>
+</html>
