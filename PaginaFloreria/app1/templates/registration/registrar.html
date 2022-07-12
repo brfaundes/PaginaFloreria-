@@ -78,8 +78,8 @@
            <li><a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">Usuario: {{ user.username }}</a></li>
             <li><a class="nav-link active" aria-current="page" href="{% url 'logout' %}" style="color: aliceblue;">Cerrar Sesion</a></li>
           {% else %}      
-            <li><a class="nav-link active" aria-current="page" href="accounts/login" style="color: aliceblue;">inicia Sesion</a></li>   
-            <a href="registration/registrar.html" button type="button" class="btn btn-success" > Registrate </a>           
+            <li><a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;">inicia Sesion</a></li>   
+            <a href="#" button type="button" class="btn btn-success" > Registrate </a>           
           {% endif %}
 
           <h9 style="color: rgb(54, 54, 54);">_____</h9>
@@ -93,104 +93,35 @@
         </div>
   
         </div>
-      </nav>   
+      </nav>    
 <!-- FINAL NAVBAR -->
-    <br>
-<!-- Imagen y texto -->
-    <div class="container" style="background-color:rgb(216, 216, 216) ;">
-      <div class="row">
-          <div class="col"  >
-              <br>
-              <div id="img" class="container-fluid"><img src="{% static 'img/imgIndex.jpg'%}" alt="imagen de index" width=200 height="200"></div>
-              <br>
-          </div>
-          <div class="col"  >
-            <p>
-              Como vecinos queremos que la comunidad se llene de colores!!!, es por eso que vendemos productos para jardinería: flores, arbustos, tierra de hojas, maceteros. Las ganancias seran donadas a una fundación sin fines de lucro.
-            </p>
-          </div>
-      </div>
-      <hr width="100%" color="black" />
-      <h1> Contacto</h1>
-      <h2>+56961686938</h2>
-      <hr width="100%" color="black" />
-    </div>
-<!-- Fin Imagen y texto -->
+<br><br>
 
-<!-- Inicio Carrusel-->
+    <div class=" form-group">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="login-form">
+                        <h2 class="text-center">Registro Usuario</h2>
+                        
+                        <hr>
 
-    <div class="container-fluid" style="background-color:rgb(216, 216, 216) ;">
-      <div class="row">
-      <div class="col"></div>
-      
-      <div class="col">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <form actions="" method="post">
+                            {% csrf_token %}
+                            <table>{{ form }}</table>
+                            <br/>
+                            <br/>
+                        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                        </form>  
+                    </div>
+                </div>    
+            </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="macetero.html"><img src="{% static 'img/macetero3.jpg '%}" class="d-block w-100" alt="..." width="400" height="500"></a>
-            <div class="carousel-caption d-none d-md-block" >
-              <h5>PROMOCION MACETEROS</h5>
-              <p id="promo">MAcetero 3 X SOLO $60.000 </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="tierra.html"><img src="{% static 'img/tierra3.jpg '%}" class="d-block w-100" alt="..." width="400" height="500" ></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5>PROMOCION TIERA DE HOJAS</h5>
-              <p id="promo">3 x2 Tierra de hojas reforzada</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <a href="flores.html"><img src="{% static 'img/flores2.jpg '%}" class="d-block w-100" alt="..." width="400" height="500"></a>
-            <div class="carousel-caption d-none d-md-block">
-              <h5 >PROMOCION FLORES</h5>
-              <p id="promo">Violetas 4 X $20.000</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
     </div>
-      <div class="col"></div>
-    </div>
-    </div>
-<!-- Fin Carrusel -->
-    <br>
-<div class="container" style="background-color:rgb(216, 216, 216) ;">
-  <hr width="100%" color="black" />
-    <div class="row">
 
-      <div class="col">
-        <h3>Macetero</h3>
-        <p id="p2">Lindos maceteros de ceramica ideales para su hogar, ya sea interior o exterior. </p>
-      </div>
-      <div class="col">
-        <h3>Flores</h3>
-        <p id="p2">Llenese de colores con la gran variedad de violetas, rosas y girasoles.</p>
-      </div>
 
-      <div class="col">
-        <h3>Fertilizantes</h3>
-        <p id="p2">Fertilizantes y tierra de hojas de Gran calidad para tus plantas y flores.</p>
-      </div>
 
-   </div>
-   <hr width="100%" color="black" />
-
-</div>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div class="container-fluid" style="background-color: rgb(54, 54, 54);">
   <br>

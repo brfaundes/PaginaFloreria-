@@ -9,6 +9,7 @@ class Categoria(models.Model):
         return self.nombre
 
 class Producto(models.Model):
+    imagen = models.ImageField(null=True, blank=True)
     nombre = models.CharField(max_length=40)
     precio = models.IntegerField()
     stock = models.IntegerField()

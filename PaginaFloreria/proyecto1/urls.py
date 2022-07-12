@@ -17,9 +17,16 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls import include
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('app1.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
 ]
+
+admin.site.site_header="Administracion Jardineria"
+admin.site.index_title="Modulos de administracion"
+admin.site.site_title="Jardineria"
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
